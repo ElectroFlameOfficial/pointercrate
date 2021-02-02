@@ -1,0 +1,31 @@
+name: Rust
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: pandoc
+      run: sudo apt-get install pandoc -y
+    - name: install diesel cli
+      run: cargo install diesel_cli
+    - name: create a .secret
+      run: openssl rand -base64 32 > .secret
+    - name: connect to the server
+    - uses: actions/checkout@v2
+    - name: Build
+      run: cargo build --verbose
+    - name: diesel migration run
+      run: diesel migration run
+    - name: Run tests
+      run: cargo test --verbose
