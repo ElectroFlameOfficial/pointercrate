@@ -21,7 +21,6 @@ jobs:
       run: cargo install diesel_cli
     - name: create a .secret
       run: openssl rand -base64 32 > .secret
-    - name: connect to the server
     - uses: actions/checkout@v2
     - name: Build
       run: cargo build --verbose
