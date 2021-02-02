@@ -33,7 +33,7 @@ impl Page for Homepage {
     }
 
     fn description(&self) -> String {
-        "Pointercrate is the home of the official Demonlist, a ranking of the hardest rated demons maintained by some of the game's most \
+        "Shittycrate is the home of the official Demonlist, a ranking of the hardest rated demons maintained by some of the game's most \
          skilled players"
             .to_owned()
     }
@@ -56,19 +56,19 @@ impl Page for Homepage {
                                 "Pointercrate"
                             }
                             h2 style="text-align: left" {
-                                "Home of the official Demonlist"
+                                "Home of the official Shitty list"
                             }
                             div.tab-content.tab-content-active data-tab-id ="1" {
-                                "The pointercrate Demonlist is the most popular ranking of Geometry Dash's hardest demons with multiple thousand visitors each day! Even RobTop himself likes it!"
+                                "The Shittycrate Shitty list is the most popular ranking of Geometry Dash's hardest Shitty levels with multiple thousand visitors each day! Even RobTop himself likes it!"
                             }
                             div.tab-content data-tab-id = "2" {
-                                "The Demonlist stats viewer assigns each player a score based on how many demons they've beaten and then ranks them, showing exactly who's the best!"
+                                "The list stats viewer assigns each player a score based on how many shitty levels they've beaten and then ranks them, showing exactly who's the best!"
                             }
                             div.tab-content data-tab-id = "3" {
-                                "Each submitted record on the Demonlist is manually accepted or rejected by our competent list editors!"
+                                "Each submitted record on the list is manually accepted or rejected by our competent list editors!"
                             }
                             div.tab-content data-tab-id = "4" {
-                                "Thanks to our specialized way of connecting to the Geometry Dash servers we are able to display a whole range of information about the demons, including their description, download count and much more!"
+                                "Thanks to our specialized way of connecting to the Geometry Dash servers we are able to display a whole range of information about the levels, including their description, download count and much more!"
                             }
                         }
                         div.tab-selection.flex.wrap style="padding: 20px 0px; text-align: center"{
@@ -106,14 +106,14 @@ impl Page for Homepage {
             }
             aside.center.information-stripe {
                 div.flex style="flex-wrap: wrap; align-items: center" {
-                    span { "Over 13 000 daily visitors!" }
-                    span { "Over 150 ranked demons!" }
-                    span { "Over 15 000 records!" }
+                    span { "Over 1 000 daily visitors!" }
+                    span { "Over 150 ranked levels!" }
+                    span { "Over 5 000 records!" }
                 }
             }
             div.center.information-banner.right {
                 div {
-                    a.big.blue.hover.button.js-scroll-anim data-anim="fade" href = "https://github.com/stadust/pointercrate" target = "_blank"{
+                    a.big.blue.hover.button.js-scroll-anim data-anim="fade" href = "https://github.com/electroflameofficial/pointercrate" target = "_blank"{
                         i.fa.fa-github aria-hidden="true" {}
                         (PreEscaped("&nbsp;&nbsp;&nbsp;"))
                         "To the repository"
@@ -130,7 +130,8 @@ impl Page for Homepage {
                 div.flex style="flex-wrap: wrap; align-items: center" {
                     span { "Written in Rust!" }
                     span { "Actively Maintained!" }
-                    span { "I don't know what to write anymore!" }
+                    span { "Stad why did you remove the python backend?!" }
+                    span { "TIP and Luke were here!" }
                 }
             }
             div.center.information-banner.left {
@@ -141,27 +142,13 @@ impl Page for Homepage {
                         }
                         div.tab-content.tab-content-active data-tab-id ="98" {
                             h3 style="text-align: left; font-size: 110%" {
-                                "2020: Not a lot tbh!"
+                                "2021: Making it ours..."
                             }
                             p {
-                                "Keeping up with the tradition of updating this part of the website precisely once a year, I find myself not really able to report about a major update at all. While there were some quite significant changes made to pointercrate this year, they were mostly internal, or not available to the public. Which is why I am using this entry to just quickly summarize the few things that did change this year"
-                            }
-                            ul {
-                                li {
-                                    "GD Integration has been reworked and is now based upon a must more solid foundation. Our new GD connector, dash-rs, was developed in collaboration with " a.link href = "https://github.com/mgostIH" {"mgostIH"} "."
-                                }
-                                li {
-                                    "Back in march, pointercrate's internals were rewritten to utilize the then-stabilized " code { "async/await" } " mechanics. At the same time, the entire database layer was rewritten. "
-                                }
-                                li {
-                                    "Since september, the list mods use a web interface for managing the list, instead of a disord bot"
-                                }
-                            }
-                            p {
-                                "Some of these changes will bring improvements to the public facing parts of pointercrate soon hopefully. Mainly, there are plans to overhault the record submitters using some of the UI components that have been developed for the internal management interface. A completely list of planned featured can also be found on " a.link href = "https://trello.com/b/10tslTjl/pointercrate" { "this trello board" } "."
+                                "Possibly the best way to kick off the year. The pain is finally over... over 3 months of work and 4 build fails near the end, i finally did it. thank you so much for those that supported me along this journey, love you all <3."
                             }
                         }
-                        div.tab-content data-tab-id ="99" {
+/*                        div.tab-content data-tab-id ="99" {
                             h3 style="text-align: left; font-size: 110%" {
                                 "2019-03-02: Rustification!"
                             }
@@ -239,13 +226,12 @@ impl Page for Homepage {
                             p {
                                 "Most of these issues arose because the old version was not designed with mobile in mind, and mobile support was 'hacked in' later. The new design uses a mobile-first approach and should be a lot more responsive."
                             }
-                        }
-                    }
+                        }*/
                     aside.tab-selection style="padding: 20px 0px; text-align: center"{
-                        h3.tab.tab-active data-tab-id="98" style="padding: 10px; text-align:left" { "2020" }
-                        h3.tab data-tab-id="99" style="padding: 10px; text-align:left" { "2019-03-02" }
+                        h3.tab.tab-active data-tab-id="98" style="padding: 10px; text-align:left" { "2021-02-01" }
+/*                        h3.tab data-tab-id="99" style="padding: 10px; text-align:left" { "2019-03-02" }
                         h3.tab data-tab-id="100" style="padding: 10px; text-align:left" { "2018-04-04" }
-                        h3.tab data-tab-id="101" style="padding: 10px; text-align: left" { "2017-10-29" }
+                        h3.tab data-tab-id="101" style="padding: 10px; text-align: left" { "2017-10-29" }*/
                     }
                 }
             }
@@ -253,7 +239,7 @@ impl Page for Homepage {
                 div.flex style="flex-wrap: wrap; align-items: center" {
                     span { "On average updated once a year!" }
                     span { "I redo the homepage every time!" }
-                    span { "No new features since 1975!" }
+                    span { "Sydney, fulva, and Cyns were here!" }
                 }
             }
             div.center.information-banner.right {
@@ -263,9 +249,9 @@ impl Page for Homepage {
                     }
                     div.flex#about-inner {
                         div style = "flex-basis: 0; padding: 5px" {
-                            h3 { "Demonlist Team: "}
+                            h3 { "list Team: "}
                             p {
-                                "The demonlist is managed by a large team of players lead by:"
+                                "The list is managed by a large team of players lead by:"
                             }
                             div.flex.wrap style = "padding: 20px" {
                                 @for member in &self.demonlist_team {
@@ -275,7 +261,7 @@ impl Page for Homepage {
                             p {
                                 "Contact these people for any list related questions/issues"
                             }
-                            i {
+/*                            i {
                                 "Twitter: "
                                 a href = "https://twitter.com/demonlistgd" {"demonlistgd"}
                             }
@@ -289,16 +275,16 @@ impl Page for Homepage {
                                 "Twitch: "
                                 a href = "https://twitch.tv/demonlistgd/" {"DemonListGD"}
                             }
-                            br ;
+                            br ;*/
                             i {
                                 "Discord: "
-                                a href = "https://discord.gg/cZcBxQT" {"Demon List Public Server"}
+                                a href = "https://discord.gg/shittylist" {"Demon List Public Server"}
                             }
                         }
                         div style = "flex-basis: 0; padding: 5px" {
-                            h3 { "Pointercrate Team: "}
+                            h3 { "(Rehosted) Pointercrate Team: "}
                             p {
-                                "Pointercrate as an entity independent from the Demonlist is administrated and moderated by the following people:"
+                                "Pointercrate as an entity independent from the list is administrated and moderated by the following people:"
                             }
                             div.flex.wrap style = "padding: 20px" {
                                 @for member in &self.pointercrate_team {
@@ -336,13 +322,13 @@ impl Page for Homepage {
   {
     "@context": "http://schema.org",
     "@type": "Organization",
-    "name": "pointercrate",
-    "description": "Pointercrate is the home of the official Demonlist, a ranking of the hardest rated demons maintained by some of the game's most skilled players",
+    "name": "shittycrate",
+    "description": "shittycrate is the home of the official shitty list, a ranking of the hardest rated shitty levels maintained by some of the game's most skilled players",
     "url": "https://pointercrate.com/",
     "logo": "https://pointercrate.com/static2/images/pointercrate2.png",
     "sameAs": [
-      "https://twitter.com/demonlistgd",
-      "https://www.youtube.com/channel/UCqI5feGZEqJRp6VcrP5gVyw"
+      "",
+      ""
     ]
   }
 </script>
